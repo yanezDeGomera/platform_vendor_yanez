@@ -1,10 +1,10 @@
-# Generic Lord product
-PRODUCT_NAME := lord
-PRODUCT_BRAND := lord
+# Generic product
+PRODUCT_NAME := yanez
+PRODUCT_BRAND := yanez
 PRODUCT_DEVICE := generic
 
 # Include GSM stuff
-$(call inherit-product, vendor/lord/products/gsm.mk)
+$(call inherit-product, vendor/yanez/products/gsm.mk)
 
 PRODUCT_PACKAGES += \
     Superuser \
@@ -31,17 +31,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 PRODUCT_COPY_FILES += \
-    vendor/lord/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
-    vendor/lord/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/lord/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/lord/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/lord/prebuilt/common/etc/init.d/99complete:system/etc/init.d/99complete \
-    vendor/lord/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
-    vendor/lord/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/lord/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
-    vendor/lord/prebuilt/common/xbin/htop:system/xbin/htop \
-    vendor/lord/prebuilt/common/xbin/irssi:system/xbin/irssi \
-    vendor/lord/prebuilt/common/xbin/powertop:system/xbin/powertop \
-    vendor/lord/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh \
-    vendor/lord/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh \
-    vendor/lord/prebuilt/setup/overlay:system/setup/overlay
+    vendor/yanez/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/yanez/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/yanez/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/yanez/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/yanez/prebuilt/common/etc/init.d/99complete:system/etc/init.d/99complete \
+    vendor/yanez/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
+    vendor/yanez/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/yanez/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
+    vendor/yanez/prebuilt/common/xbin/htop:system/xbin/htop \
+    vendor/yanez/prebuilt/common/xbin/irssi:system/xbin/irssi \
+    vendor/yanez/prebuilt/common/xbin/powertop:system/xbin/powertop \
+    vendor/yanez/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh \
+    vendor/yanez/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh \
+    vendor/yanez/prebuilt/setup/overlay:system/setup/overlay
